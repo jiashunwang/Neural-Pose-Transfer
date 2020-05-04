@@ -1,223 +1,107 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+}
 
-<html>
+h1 {
+    font-weight:300;
+}
 
-<head>
-    <link rel="StyleSheet" href="style.css" type="text/css" media="all">
-    <title>Pixel2Mesh++</title>
-    <meta property="og:title" content="Neural Pose Transfer by Spatially Adaptive Instance Normalization">
-    <!-- <meta property="og:image" content="https://www.cs.cmu.edu/~wyuan1/cmr/resources/images/shapenet.png"> -->
-    <!-- <meta property="og:url" content="https://youtu.be/bzJrPQilPxg"> -->
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
-</head>
-<body>
-    <br>
-    <div class="center-div">
-        <span style="font-size:40px">Neural Pose Transfer by Spatially Adaptive Instance Normalization</span>
-    </div>
+.center-div {
+    text-align: center;
+}
 
-    <br>
-    <table align="center" width="800px">
-        <tbody>
-            <tr>
-                <td align="center" width="100px">
-                    <div class="center-div">
-                        <span style="font-size:22px"><a href="#">Jiashun Wang</a></span>
-                    </div>
-                </td>
+.disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+}
 
-                <td align="center" width="100px">
-                    <div class="center-div">
-                        <span style="font-size:22px"><a href="#">Chao Wen</a></span>
-                    </div>
-                </td>
+video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+}
 
-                <td align="center" width="100px">
-                    <div class="center-div">
-                        <span style="font-size:22px"><a href="#">Yanwei Fu</a></span>
-                    </div>
-                </td>
+img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+}
 
-                <td align="center" width="100px">
-                    <div class="center-div">
-                        <span style="font-size:22px"><a href="#">Haitao Lin</a></span>
-                    </div>
-                </td>
+img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+}
 
-                <td align="center" width="100px">
-                    <div class="center-div">
-                        <span style="font-size:22px"><a href="#">Tianyun Zou</a></span>
-                    </div>
-                </td>
+a:link,a:visited
+{
+    color: #1367a7;
+    text-decoration: none;
+}
+a:hover {
+    color: #208799;
+}
 
-                <td align="center" width="100px">
-                    <div class="center-div">
-                        <span style="font-size:22px"><a href="#">Xiangyang Xue</a></span>
-                    </div>
-                </td>
+td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+}
 
-                <td align="center" width="100px">
-                    <div class="center-div">
-                        <span style="font-size:22px"><a href="#">Yinda Zhang</a></span>
-                    </div>
-                </td>
-
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align="center" width="700px">
-        <tbody>
-            <tr>
-                <td align="center" width="100px">
-                    <div class="center-div">
-                        <span style="font-size:22px">Fudan University &nbsp; &nbsp; Google LLC.</span>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <br>
-    <table align="center" width="600px">
-        <tbody>
-            <tr>
-                <td>
-                    <div class="center-div">
-                        <a href="#"><img src="./resources/images/pipeline.png" width="1000px"></a><br>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="center-div">
-                        <span style="font-size:14px"><i>Pixel2Mesh++ Shape Generation Pipeline.</i>
-                        </span></div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br><br>
-
-    <hr>
-    <div class="center-div">
-        <h1>Abstract</h1>
-    </div>
-    <p>
-        Pose transfer has been studied for decades, in which the pose of a source mesh is applied 
-        to a target mesh. Particularly in this paper, we are interested in transferring the pose of 
-        source human mesh to deform the target human mesh, while the source and target meshes may 
-        have different identity information. Traditional studies assume that the paired source and 
-        target meshes are existed with the point-wise correspondences of user annotated landmarks/mesh 
-        points, which requires heavy labelling efforts. On the other hand, the generalization ability 
-        of deep models is limited, when the source and target meshes have different identities. To 
-        break this limitation, we proposes the first neural pose transfer model that solves the pose 
-        transfer via the latest technique for image style transfer, leveraging the newly proposed 
-        component -- spatially adaptive instance normalization. Our model does not require any 
-        correspondences between the source and target meshes. Extensive experiments show that the 
-        proposed model can effectively transfer deformation from source to target meshes, and has 
-        good generalization ability to deal with unseen identities or poses of meshes. Code is available 
-        at \href{https://github.com/jiashunwang/Neural-Pose-Transfer}{https://github.com/jiashunwang/Neural-Pose-Transfer}.
-    </p>
-    <br><br>
-
-    <hr>
-    <div class="center-div">
-        <h1 id="code">Network Architecture</h1>
-    </div>
-    <div class="center-div">
-        <img class="round" style="height:400" src="./resources/images/architecture.png">
-    </div>
-    <br><br>
-
-    <hr>
-    <div class="center-div">
-        <h1 id="paper">Paper, Code and Data</h1>
-    </div>
-    <table align="center" width="600px">
-
-        <tbody>
-            <tr>
-                <td>
-                    <img class="layered-paper-big" style="height:175px" src="./resources/images/page1.png">
-                </td>
-                <td>
-                    <span style="font-size:14pt">C. Wen, Y. Zhang, Z. Li, Y. Fu.</span>
-                    <br><br>
-                    <b><span style="display:inline-block;width:600px;font-size:14pt">Pixel2Mesh++: Multi-View 3D Mesh
-                            Generation via Deformation.</span></b>
-                    <br><br>
-                    <span style="font-size:14pt">ICCV, 2019.</span>
-                    <br><br>
-                    <span style="font-size:20px">
-                        <a href="#">[arXiv]</a> &nbsp; &nbsp;
-                        <a href="./resources/bibtex.txt">[Bibtex]</a> &nbsp; &nbsp; 
-                        <a href="#">[GitHub]</a> &nbsp; &nbsp;
-                        <a href="#">[Google Drive]</a>
-                    </span>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br><br>
-
-    <hr>
-    <div class="center-div">
-        <h1 id="code">Results</h1>
-    </div>
-    <div class="center-div">
-        <table align="center" width="600px">
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="center-div">
-                            <img src="./resources/images/cvpr20_v4_poster.png" width="400px"><br>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="center-div">
-                            <img src="./resources/images/gene.png" width="400px"><br>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="center-div">
-                            <span style="font-size:14px"><i>Results on ShapeNet objects.</i>
-                            </span></div>
-                    </td>
-                    <td>
-                        <div class="center-div">
-                            <span style="font-size:14px"><i>Robustness to Initialization.</i>
-                            </span></div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <br><br>
-    <hr>
-    <table align="center" width="980px">
-        <tbody>
-            <tr>
-                <td>
-                    <left>
-                        <div class="center-div">
-                            <h1>Acknowledgements</h1>
-                        </div>
-                        <div class="center-div">
-                        fix it</a>.
-                        </div>
-                    </left>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
+.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+}
 
 
+.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
 
-</body>
+.vert-cent {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-</html>
+hr
+{
+    border: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
