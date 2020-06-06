@@ -36,3 +36,6 @@ Part of our code is based on [SPADE](https://github.com/NVlabs/SPADE)，[3D-CODE
 ). Many thanks!
 
 This work was supported in part by NSFC Projects (U1611461), Science and Technology Commission of Shanghai Municipality Projects (19511120700, 19ZR1471800), Shanghai Municipal Science and Technology Major Project (2018SHZDZX01), and Shanghai Research and Innovation Functional Program (17DZ2260900).
+
+## License
+Apache-2.0 License
