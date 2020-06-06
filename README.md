@@ -2,7 +2,7 @@
 
 This is an implementation of the CVPR'20 paper "Neural Pose Transfer by Spatially Adaptive Instance Normalization".
 
-Please check our [paper](https://arxiv.org/abs/2003.07254) and the [project webpage](https://jiashunwang.github.io/Neural-Pose-Transfer/) webpage for more details.
+Please check our [paper](https://arxiv.org/abs/2003.07254) and the [project webpage](https://jiashunwang.github.io/Neural-Pose-Transfer/) for more details.
 
 #### Citation
 
