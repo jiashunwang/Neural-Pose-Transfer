@@ -111,7 +111,6 @@ class NPT(nn.Module):
         super(NPT, self).__init__()
         self.num_points = num_points
         self.bottleneck_size = bottleneck_size
-        
         self.encoder = PoseFeature(num_points = num_points)
         self.decoder = Decoder(bottleneck_size = self.bottleneck_size+3)
 
