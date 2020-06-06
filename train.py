@@ -61,7 +61,7 @@ for epoch in range(1000):
         edg_loss=edg_loss/len(random_sample)
 
         l2_loss=rec_loss
-        rec_loss=rec_loss+0.001*edg_loss
+        rec_loss=rec_loss+0.0005*edg_loss
         rec_loss.backward()
         optimizer_G.step()
         total_loss=total_loss+rec_loss 
