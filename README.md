@@ -27,7 +27,7 @@ Requirements:
 Our code has been tested with Python 3.6, Pytorch1.1.0, CUDA 9.0 on Ubuntu 16.04.
 
 ## Generating the data
-We provide our code data_generation.py based on https://github.com/CalciferZh/SMPL and for more information about SMPL, please check https://smpl.is.tue.mpg.de/. The meshes with clothes are from https://virtualhumans.mpi-inf.mpg.de/mgn/
+We provide our code data_generation.py based on https://github.com/CalciferZh/SMPL and for more information about SMPL, please check https://smpl.is.tue.mpg.de/. The meshes with clothes are from https://virtualhumans.mpi-inf.mpg.de/mgn/.
 
 ## Running the demo
 We provide the pretrained model for the original method and maxpooling method and also two meshes for test. For you own data, please train the model by yourself, because the pose parameter space may be different. For human meshes with clothes, we recommend the max-pooling method.
