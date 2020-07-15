@@ -14,10 +14,10 @@ class SMPL_DATA(data.Dataset):
     def __getitem__(self, index):
         
         identity_mesh_i=np.random.randint(0,16)
-        identity_mesh_p=np.random.randint(0,400)
+        identity_mesh_p=np.random.randint(200,600)
 
         pose_mesh_i=np.random.randint(0,16)
-        pose_mesh_p=np.random.randint(0,400)
+        pose_mesh_p=np.random.randint(200,600)
         
         
         identity_mesh=pymesh.load_mesh(self.path+str(identity_mesh_i)+'_'+str(identity_mesh_p)+'.obj')
