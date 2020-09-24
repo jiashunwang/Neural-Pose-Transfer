@@ -8,10 +8,11 @@ Please check our [paper](https://arxiv.org/abs/2003.07254) and the [project webp
 
 If you use this code for any purpose, please consider citing:
 ```
-@inProceedings{wang2020npt,
+@inproceedings{wang2020neural,
   title={Neural Pose Transfer by Spatially Adaptive Instance Normalization},
-  author={Jiashun Wang and Chao Wen and Yanwei Fu and Haitao Lin and Tianyun Zou and Xiangyang Xue and Yinda Zhang},
-  booktitle={CVPR},
+  author={Wang, Jiashun and Wen, Chao and Fu, Yanwei and Li, Haitao and Zou, Tianyun and Xue, Xiangyang and Zhang, Yinda},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={5831--5839},
   year={2020}
 }
 ```
