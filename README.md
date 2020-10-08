@@ -32,6 +32,7 @@ We provide our code data_generation.py based on https://github.com/CalciferZh/SM
 
 ## Data and Pre-trained model
 We provide dataset and pre-trained model used in our paper, please download data from [data link](http://www.sdspeople.fudan.edu.cn/fuyanwei/download/NeuralPoseTransfer/data/), and download model weights from [model link](http://www.sdspeople.fudan.edu.cn/fuyanwei/download/NeuralPoseTransfer/ckpt/). The test data file lists are also provided, the mesh file order in file lists are `identiy pose gt`.
+(Backup links: [Google Drive](https://drive.google.com/drive/folders/1ZduWjWn5sqbiU7aG2VSFm5YcdGudFTwk?usp=sharing))
 
 ## Running the demo
 We provide the pre-trained model for the original method and maxpooling method and also two meshes for test. For you own data, please train the model by yourself, because the pose parameter space may be different. For human meshes with clothes, we recommend the max-pooling method.
