@@ -47,6 +47,9 @@ We provide both original and max-pooling methods. The original method has slight
 python train.py
 ```
 
+## Evaluation
+evaluate.py is the code for evaluation.
+
 ## Acknowledgement
 Part of our code is based on [SPADE](https://github.com/NVlabs/SPADE)，[3D-CODED](https://github.com/ThibaultGROUEIX/3D-CODED) and [pointnet.pytorch](https://github.com/fxia22/pointnet.pytorch
 ). Many thanks!
