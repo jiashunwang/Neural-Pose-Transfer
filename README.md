@@ -10,7 +10,7 @@ If you use this code for any purpose, please consider citing:
 ```
 @inproceedings{wang2020neural,
   title={Neural Pose Transfer by Spatially Adaptive Instance Normalization},
-  author={Wang, Jiashun and Wen, Chao and Fu, Yanwei and Li, Haitao and Zou, Tianyun and Xue, Xiangyang and Zhang, Yinda},
+  author={Wang, Jiashun and Wen, Chao and Fu, Yanwei and Lin, Haitao and Zou, Tianyun and Xue, Xiangyang and Zhang, Yinda},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={5831--5839},
   year={2020}
