@@ -6,7 +6,7 @@ Please check our [paper](https://arxiv.org/abs/2003.07254) and the [project webp
 
 #### Citation
 
-If you use this code for any purpose, please consider citing:
+If you use our code or paper, please consider citing:
 ```
 @inproceedings{wang2020neural,
   title={Neural Pose Transfer by Spatially Adaptive Instance Normalization},
