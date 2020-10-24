@@ -15,7 +15,7 @@ gt_mesh=trimesh.load('gt.obj')
 gt_vertices=gt_mesh.vertices
 gt_bbox= np.array([[np.max(gt_vertices[:,0]), np.max(gt_vertices[:,1]), np.max(gt_vertices[:,2])], \
                         [np.min(gt_vertices[:,0]), np.min(gt_vertices[:,1]), np.min(gt_vertices[:,2])]])
-gt_vertices_align=gt_vertices-(ours_bbox[0] + ours_bbox[1]) / 2
+gt_vertices_align=gt_vertices-(gt_bbox[0] + gt_bbox[1]) / 2
 
 print(np.mean((ours_vertices_align-gt_vertices_align)**2))
 
