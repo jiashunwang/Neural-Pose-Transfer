@@ -42,7 +42,7 @@ python demo.py
 
 
 ## Training
-We provide both original and max-pooling methods. The original method has slightly better quantitative results. The max-pooling method is more convenient when dealing with identity and pose meshes with different number of vertices and this method produces smoother results.
+We provide both original and max-pooling methods. (Max-pooling one is recommended). The original method has slightly better quantitative results. The max-pooling method is more convenient when dealing with identity and pose meshes with different number of vertices and this method produces smoother results.
 ```
 python train.py
 ```
